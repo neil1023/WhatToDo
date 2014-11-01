@@ -11,5 +11,7 @@
     <string name="goBack">GO BACK</string>
     <string name="user_name">Username</string>
     <string name="password">Password</string>
+    <string name="title_activity_register">RegisterActivity</string>
+    <string name="Name">FirstName LastName</string>
 
 </resources>

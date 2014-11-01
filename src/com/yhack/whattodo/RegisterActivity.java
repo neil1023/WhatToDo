@@ -7,30 +7,30 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
-public class MainActivity extends ActionBarActivity {
+public class RegisterActivity extends ActionBarActivity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_main);
+		setContentView(R.layout.activity_register);
+	}
+
+	public void register(View view){
+		//Intent intent = new Intent(this, MainActivity.class);
+    	
+    	//startActivity(intent);
 	}
 	
-	public void logIn(View view){
-    	Intent intent = new Intent(this, LogInActivity.class);
+	public void goBack(View view){
+    	Intent intent = new Intent(this, MainActivity.class);
     	
     	startActivity(intent);
     }
 	
-	public void register(View view){
-		Intent intent = new Intent(this, RegisterActivity.class);
-		
-		startActivity(intent);
-	}
-
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.main, menu);
+		getMenuInflater().inflate(R.menu.register, menu);
 		return true;
 	}
 

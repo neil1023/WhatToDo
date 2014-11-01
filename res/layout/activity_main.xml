@@ -10,7 +10,7 @@
     tools:context="com.yhack.whattodo.MainActivity" >
 
     <Button
-        android:id="@+id/button1"
+        android:id="@+id/login_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
@@ -22,19 +22,8 @@
         android:width="200sp"
         android:onClick="logIn" />
 
-    <TextView
-        android:id="@+id/textView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/button1"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="102dp"
-        android:text="@string/WhatToDo"
-        android:textColor="#ffffff"
-        android:textSize="30sp" />
-
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/register_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/textView1"
@@ -44,6 +33,17 @@
         android:text="@string/Register"
         android:textColor="#000000"
         android:width="200sp"
-        android:onClick="goBack" />
+        android:onClick="register" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/login_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="100dp"
+        android:text="@string/WhatToDo"
+        android:textColor="#ffffff"
+        android:textSize="30sp" />
 
 </RelativeLayout>

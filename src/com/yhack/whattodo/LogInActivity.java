@@ -1,5 +1,7 @@
 package com.yhack.whattodo;
 
+import com.firebase.client.Firebase;
+
 import android.support.v7.app.ActionBarActivity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,9 +12,13 @@ import android.widget.TextView;
 
 public class LogInActivity extends ActionBarActivity {
 
+	public static Firebase myFirebaseRef;
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		Firebase.setAndroidContext(this);
+		myFirebaseRef = new Firebase("https://whattodo1031.firebaseio.com/");
 		setContentView(R.layout.activity_log_in);
 	}
 	
