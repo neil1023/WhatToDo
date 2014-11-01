@@ -30,17 +30,18 @@ public class LogInActivity extends Activity {
 	
 	public void logInUser(View view){
 		
-		TextView tvUserName= (TextView) view.findViewById(R.id.Username);
+		TextView tvUserName= (TextView) findViewById(R.id.Username);
 		String userName = tvUserName.getText().toString();
 		
-		TextView tvPassword= (TextView) view.findViewById(R.id.Password);
+		TextView tvPassword= (TextView) findViewById(R.id.Password);
 		String password = tvPassword.getText().toString();
 		
+		Intent i = new Intent(this, ListActivity.class);
+		Bundle extra = new Bundle();
+		extra.putString("userName", userName);
+		i.putExtra("bundle", extra);
+		startActivity(i);
 		
-		
-		Intent intent = new Intent(this, MainActivity.class);
-		
-		startActivity(intent);
 	}
 
 	@Override

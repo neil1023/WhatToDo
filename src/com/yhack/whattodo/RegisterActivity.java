@@ -24,16 +24,16 @@ public class RegisterActivity extends Activity {
 
 	public void register(View view){
 		
-		TextView tvFirstName= (TextView) view.findViewById(R.id.FirstName);
+		TextView tvFirstName= (TextView) findViewById(R.id.FirstName);
 		String FirstName = tvFirstName.getText().toString();
 		
-		TextView tvLastName= (TextView) view.findViewById(R.id.LastName);
+		TextView tvLastName= (TextView) findViewById(R.id.LastName);
 		String LastName = tvLastName.getText().toString();
 		
-		TextView tvUserName= (TextView) view.findViewById(R.id.username);
+		TextView tvUserName= (TextView) findViewById(R.id.username);
 		String UserName = tvUserName.getText().toString();
 		
-		TextView tvPassword= (TextView) view.findViewById(R.id.password);
+		TextView tvPassword= (TextView) findViewById(R.id.password);
 		String password = tvPassword.getText().toString();
 		
 		myFirebaseRef.child("users").setValue(UserName);
@@ -41,9 +41,10 @@ public class RegisterActivity extends Activity {
 		myFirebaseRef.child("users").child(UserName).child("LastName").setValue(LastName);
 		myFirebaseRef.child("users").child(UserName).child("UserName").setValue(UserName);
 		myFirebaseRef.child("users").child(UserName).child("Password").setValue(password);
-		//Intent intent = new Intent(this, MainActivity.class);
+		
+		Intent intent = new Intent(this, MainActivity.class);
     	
-    	//startActivity(intent);
+    	startActivity(intent);
 	}
 	
 	public void goBack(View view){
