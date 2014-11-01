@@ -8,5 +8,8 @@
     <string name="LogIn">LOG IN</string>
     <string name="Register">REGISTER</string>
     <string name="title_activity_log_in">LogInActivity</string>
+    <string name="goBack">GO BACK</string>
+    <string name="user_name">Username</string>
+    <string name="password">Password</string>
 
 </resources>

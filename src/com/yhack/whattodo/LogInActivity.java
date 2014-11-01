@@ -1,9 +1,12 @@
 package com.yhack.whattodo;
 
 import android.support.v7.app.ActionBarActivity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.TextView;
 
 public class LogInActivity extends ActionBarActivity {
 
@@ -11,6 +14,27 @@ public class LogInActivity extends ActionBarActivity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_log_in);
+	}
+	
+	public void goBack(View view){
+    	Intent intent = new Intent(this, MainActivity.class);
+    	
+    	startActivity(intent);
+    }
+	
+	public void logInUser(View view){
+		
+		TextView tvUserName= (TextView) view.findViewById(R.id.Username);
+		String userName = tvUserName.getText().toString();
+		
+		TextView tvPassword= (TextView) view.findViewById(R.id.Password);
+		String password = tvPassword.getText().toString();
+		
+		
+		
+		Intent intent = new Intent(this, MainActivity.class);
+		
+		startActivity(intent);
 	}
 
 	@Override

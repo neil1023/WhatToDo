@@ -19,7 +19,8 @@
         android:background="#ffffff"
         android:text="@string/LogIn"
         android:textColor="#000000"
-        android:width="200sp" />
+        android:width="200sp"
+        android:onClick="logIn" />
 
     <TextView
         android:id="@+id/textView1"
@@ -42,6 +43,7 @@
         android:background="#ffffff"
         android:text="@string/Register"
         android:textColor="#000000"
-        android:width="200sp" />
+        android:width="200sp"
+        android:onClick="goBack" />
 
 </RelativeLayout>
