@@ -21,33 +21,6 @@
         android:width="100sp" />
 
      <EditText
-         android:id="@+id/Name"
-         android:layout_width="wrap_content"
-         android:layout_height="wrap_content"
-         android:layout_alignLeft="@+id/GoBack"
-         android:layout_alignParentTop="true"
-         android:layout_marginLeft="17dp"
-         android:layout_marginTop="53dp"
-         android:ems="10"
-         android:inputType="textPersonName"
-         android:textColor="#ffffff"
-         android:hint="@string/Name" >
-
-         <requestFocus />
-     </EditText>
-
-     <EditText
-         android:id="@+id/username"
-         android:layout_width="wrap_content"
-         android:layout_height="wrap_content"
-         android:layout_alignLeft="@+id/Name"
-         android:layout_below="@+id/Name"
-         android:layout_marginTop="26dp"
-         android:ems="10"
-         android:hint="@string/user_name"
-         android:textColor="#ffffff" />
-
-     <EditText
          android:id="@+id/password"
          android:layout_width="wrap_content"
          android:layout_height="wrap_content"
@@ -68,5 +41,43 @@
          android:background="#ffffff"
          android:text="@string/Register"
          android:width="100sp" />
+
+     <EditText
+         android:id="@+id/FirstName"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_above="@+id/username"
+         android:layout_alignParentLeft="true"
+         android:layout_marginBottom="14dp"
+         android:ems="10"
+         android:hint="@string/FirstName"
+         android:inputType="textPersonName"
+         android:textColor="#ffffff" />
+
+     <EditText
+         android:id="@+id/LastName"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_above="@+id/FirstName"
+         android:layout_alignLeft="@+id/FirstName"
+         android:layout_marginBottom="22dp"
+         android:ems="10"
+         android:hint="@string/LastName"
+         android:inputType="textPersonName"
+         android:textColor="#ffffff" />
+
+     <EditText
+         android:id="@+id/username"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_above="@+id/password"
+         android:layout_alignLeft="@+id/FirstName"
+         android:layout_marginBottom="20dp"
+         android:ems="10"
+         android:hint="@string/user_name"
+         android:textColor="#ffffff" >
+
+         <requestFocus />
+     </EditText>
 
 </RelativeLayout>
